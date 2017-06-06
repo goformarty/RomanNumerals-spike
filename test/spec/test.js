@@ -12,6 +12,12 @@
       it('converts "3" to "III"', function () {
         expect(convertToRoman(3)).to.equal('III');
       });
+      it('converts "4" to "IV"', function () {
+        expect(convertToRoman(4)).to.equal('IV');
+      });
+      it('converts "5" to "V"', function () {
+        expect(convertToRoman(5)).to.equal('V');
+      });
     });
   });
 })();
