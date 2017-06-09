@@ -1,10 +1,12 @@
 (function () {
   'use strict';
 
+  var expect = chai.expect;
+
   describe('Roman numerals', function () {
     describe('convert arabic numbers to roman numerals', function () {
       it ("doesn't convert non integers", function(){
-        expect(convertToRoman("efg")).to.equal('not an integer');;
+        expect(convertToRoman("e")).to.equal('not an integer');;
       });
       it('converts "1" to "I"', function () {
         expect(convertToRoman(1)).to.equal('I');
@@ -35,6 +37,12 @@
       });
       it('converts "11" to "XI"', function () {
         expect(convertToRoman(11)).to.equal('XI');
+      });
+      it('converts "20" to "XX"', function () {
+        expect(convertToRoman(20)).to.equal('XX');
+      });
+      it('converts "154" to "CLIV"', function () {
+        expect(convertToRoman(154)).to.equal('CLIV');
       });
     });
   });
